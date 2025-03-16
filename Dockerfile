@@ -1,15 +1,15 @@
-FROM node:20.12.2-slim
+FROM node:18
 
-COPY package.json package-lock.json /app/
 WORKDIR /app
 
-RUN npm ci
-RUN npm i -g serve
+COPY package.json package-lock.json ./
 
-COPY . /app
+RUN npm ci
+
+COPY . .
 
 RUN npm run build
 
 EXPOSE 3000
 
-CMD ["serve", "-s", "dist"]
+CMD ["npm", "run", "serve"]

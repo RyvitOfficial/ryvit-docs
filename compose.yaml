@@ -1,9 +1,12 @@
-version: "3"
+version: "3.8"
 
 services:
   ryvit-docs:
+    build: .
     image: ryvit-docs:latest
-    pull_policy: never
-    restart: on-failure
+    restart: unless-stopped
     ports:
       - "3001:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
