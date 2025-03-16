@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  ryvit-docs:
+    image: ryvit-docs:latest
+    pull_policy: never
+    restart: on-failure
+    ports:
+      - "3001:3000"
