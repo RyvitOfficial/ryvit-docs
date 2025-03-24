@@ -1,17 +1,18 @@
-import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
+import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
 
 const sidebars: SidebarsConfig = {
   sidebar: [
     {
-      type: 'category',
-      label: 'Documentation',
+      type: "category",
+      label: "Documentation",
       collapsible: false,
       items: [
-        'introduction',
-        'features',
-        'how-to-use',
-        'future-plans',
-        'conclusion',
+        "introduction",
+        "how-to-use",
+        "payment-system",
+        "project-impact",
+        "features",
+        "conclusion",
       ],
     },
   ],
