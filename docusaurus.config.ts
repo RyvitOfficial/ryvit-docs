@@ -1,32 +1,32 @@
-import { Config } from '@docusaurus/types';
+import { Config } from "@docusaurus/types";
 
 const config: Config = {
-  title: 'Ryvit',
-  tagline: 'Automating TTL management for blockchain developers',
-  url: 'https://ryvit.xyz', // Replace with your actual domain
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/ryvit.ico',
+  title: "Ryvit",
+  tagline: "Automating TTL management for blockchain developers",
+  url: "https://ryvit.app", // Replace with your actual domain
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/ryvit.ico",
 
-  organizationName: 'RyvitOfficial', // Replace with your GitHub org/user
-  projectName: 'Ryvit', // Repo name
+  organizationName: "RyvitOfficial", // Replace with your GitHub org/user
+  projectName: "Ryvit", // Repo name
 
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.ts'),
-          editUrl: 'https://github.com/ryvitOfficial',
+          sidebarPath: require.resolve("./sidebars.ts"),
+          editUrl: "https://github.com/ryvitOfficial",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
@@ -34,51 +34,51 @@ const config: Config = {
 
   themeConfig: {
     navbar: {
-      title: 'Ryvit',
+      title: "Ryvit",
       logo: {
-        alt: 'ryvit Logo',
-        src: 'img/ryvit.png',
+        alt: "ryvit Logo",
+        src: "img/ryvit.png",
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'sidebar',
-          position: 'left',
-          label: 'Docs',
+          type: "docSidebar",
+          sidebarId: "sidebar",
+          position: "left",
+          label: "Docs",
         },
         {
-          href: 'https://github.com/ryvitOfficial',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/ryvitOfficial",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Docs',
-          items: [{ label: 'Introduction', to: '/docs/introduction' }],
+          title: "Docs",
+          items: [{ label: "Introduction", to: "/docs/introduction" }],
         },
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
-              label: 'Discord',
-              href: 'https://discord.gg/efJxysSF',
+              label: "Discord",
+              href: "https://discord.gg/efJxysSF",
             },
             {
-              label: 'Email',
-              href: 'mailto:ryvitofficial@gmail.com',
+              label: "Email",
+              href: "mailto:ryvitofficial@gmail.com",
             },
           ],
         },
         {
-          title: 'More',
+          title: "More",
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/ryvitOfficial',
+              label: "GitHub",
+              href: "https://github.com/ryvitOfficial",
             },
           ],
         },
